@@ -5,5 +5,5 @@ define([
     ], 
 
     function (TestCollection) {
-        var testCollection = new TestCollection;
+        var testCollection = new TestCollection();
 })
