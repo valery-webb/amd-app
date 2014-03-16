@@ -1,5 +1,7 @@
 requirejs.config({
 
+    /*baseUrl: '../3p',*/
+
     deps: ['main'],
 
     paths: {
@@ -14,4 +16,4 @@ requirejs.config({
             exports: 'Backbone'
         }
     }
-})
+});
