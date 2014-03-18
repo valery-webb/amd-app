@@ -4,14 +4,126 @@
 <title>AMD-APP:</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="ui-sources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <!--[if lt IE 9]>
     <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 <![endif]-->
+
+<style type="text/css">
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+#wrap > .container {
+  padding: 60px 15px 0;
+}
+.container .credit {
+  margin: 20px 0;
+}
+
+#footer > .container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+</style>
 </head>
 
 <body>
-    <p>AMD-APP:</p>
-    <!--<script data-main="js/app/config" src="js/3p/require.js"></script>-->
-    <script data-main="../build/optimized.min.js" src="js/3p/require.js"></script>
+
+<!-- Wrap all page content here -->
+<div id="wrap">  
+  <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">AMD-App:</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">Nav header</li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+
+  <!-- Begin page content -->
+    <div class="container">
+        <div class="page-header">
+            <h1>Welcome to the AMD application structure</h1>
+        </div>
+        <p class="lead">
+            <h3>Technologies:</h3>
+            <ul>
+                <li>Requirejs</li>
+                <li>Backbonejs</li>
+                <li>Underscorejs</li>
+                <li>jQuery</li>
+                <li>LESS</li>
+                <li>Bootstrap</li>
+                <li>Grunt</li>
+            </ul>
+        </p>
+    </div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <p class="text-muted credit">footer information</p>
+    </div>
+</div>
+
+
+<script data-main="js/app/config" src="js/3p/require.js"></script>
+<!--<script data-main="../build/optimized.min.js" src="js/3p/require.js"></script>-->
 </body>
 </html>

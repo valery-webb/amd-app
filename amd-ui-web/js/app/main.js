@@ -11,3 +11,4 @@ define([
         var testModel = new TestModel({});
         var testView = new TestView({});
 })
+
