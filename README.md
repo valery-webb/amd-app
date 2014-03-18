@@ -1,13 +1,6 @@
 amd-app
 =======
 AMD architecture template:
-
-1. Clone this repository
-   'git clone git@github.com:valery-webb/amd-app.git'
-2. Install nodejs globally 
-   http://nodejs.org/
-
-
     <div class="container">
         <div class="page-header">
             <h1>Welcome to the AMD application structure</h1>
@@ -25,3 +18,8 @@ AMD architecture template:
             </ul>
         </p>
     </div>
+<div>SETTING UP:</div>
+1. Clone this repository
+   'git clone git@github.com:valery-webb/amd-app.git'
+2. Install nodejs globally 
+   http://nodejs.org/
