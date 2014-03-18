@@ -1,5 +1,6 @@
 amd-app
 =======
+
     <div class="container">
         <div class="page-header">
             <h1>Welcome to the AMD application structure</h1>
@@ -17,6 +18,7 @@ amd-app
             </ul>
         </p>
     </div>
+    
 <h2>SETTING UP:</h2>
 1. Clone this repository
    'git clone git@github.com:valery-webb/amd-app.git'
