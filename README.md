@@ -25,3 +25,4 @@ version: 0.0.1
    'git clone git@github.com:valery-webb/amd-app.git'
 2. Install nodejs globally 
    http://nodejs.org/
+3. run "grunt" from root folder for compile and watch less 
