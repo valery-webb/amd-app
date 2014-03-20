@@ -15,6 +15,7 @@ version: 0.0.1
                 <li>LESS</li>
                 <li>Bootstrap</li>
                 <li>Grunt</li>
+                <li>Jasmine</li>
             </ul>
         </p>
     </div>
