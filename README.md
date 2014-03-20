@@ -1,6 +1,6 @@
 amd-app
 =======
-hjjjy
+
     <div class="container">
         <div class="page-header">
             <h1>Welcome to the AMD application structure</h1>
