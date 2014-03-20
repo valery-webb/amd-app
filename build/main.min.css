@@ -1,1 +1,1 @@
-.tech-list{border:#d3d3d3 1px solid;border-radius:3px}.tech-list li{text-decoration:underline;color:#777 !important}
+html,body{height:100%}#wrap{min-height:100%;height:auto !important;height:100%;margin:0 auto -60px;padding:0 0 60px}#footer{height:60px;background-color:#f5f5f5}#wrap>.container{padding:60px 15px 0}.container .credit{margin:20px 0}#footer>.container{padding-left:15px;padding-right:15px}code{font-size:80%}.tech-list{border:#d3d3d3 1px solid;border-radius:3px}.tech-list li{text-decoration:underline;color:#777}
