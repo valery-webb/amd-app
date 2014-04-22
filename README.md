@@ -16,6 +16,7 @@ version: 0.0.1
                 <li>Bootstrap</li>
                 <li>Grunt</li>
                 <li>Jasmine</li>
+                <li>Nodejs</li>
             </ul>
         </p>
     </div>
