@@ -7,8 +7,8 @@ define([
     ], 
 
     function (TestCollection, TestModel, TestView) {
-        var testCollection = new TestCollection({});
-        var testModel = new TestModel({});
-        var testView = new TestView({});
+        var testCollection = new TestCollection();
+        var testModel = new TestModel();
+        var testView = new TestView();
 })
 

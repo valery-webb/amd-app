@@ -37,7 +37,20 @@ module.exports = function (grunt) {
                     nospawn: true
                 }
             }
-        }
+        },
+
+        jasmine : {
+            src : 'amd-ui-web/tests/src/player.js',
+            options : {
+                specs : 'amd-ui-web/tests/spec/player.spec.js',
+                template: require('grunt-template-jasmine-requirejs'),
+                templateOptions: {
+                    requireConfig: {
+                        baseUrl: ''
+                    }
+                }
+            }
+        },
     });
 
 
@@ -45,7 +58,11 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-requirejs');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-jasmine');
 
-    grunt.registerTask('default', ['requirejs', 'less', 'watch']);
+
+    //grunt.registerTask('default', ['requirejs', 'less', 'watch', 'jasmine']);
+
+    grunt.registerTask('default', ['requirejs', 'jasmine']);
 
 }
