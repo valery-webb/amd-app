@@ -1,6 +1,6 @@
 'use strict';
 
-define(['src/player'], function(Player) {
+define(['amd-ui-web/ui-tests/src/player'], function(Player) {
 
     describe('Player', function() {
         var player;
@@ -8,6 +8,7 @@ define(['src/player'], function(Player) {
 
         beforeEach(function() {
             player = new Player();
+            song = 'song';
 
             // mock out a song object with a jasmine spy
             song = jasmine.createSpyObj('song', ['persistFavouriteStatus']);
@@ -18,7 +19,7 @@ define(['src/player'], function(Player) {
             expect(player.currentlyPlayingSong).toEqual(song);
 
             //demonstrates use of custom matcher
-            expect(player).toBePlaying(song);
+            //expect(player).toBePlaying(song);
         });
 
         describe('when song has been paused', function() {
@@ -31,7 +32,7 @@ define(['src/player'], function(Player) {
                 expect(player.isPlaying).toBeFalsy();
 
                 // demonstrates use of 'not' with a custom matcher
-                expect(player).not.toBePlaying(song);
+                //expect(player).not.toBePlaying(song);
             });
 
             it('should be possible to resume', function() {

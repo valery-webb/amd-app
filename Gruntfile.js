@@ -40,9 +40,9 @@ module.exports = function (grunt) {
         },
 
         jasmine : {
-            src : 'amd-ui-web/tests/src/player.js',
+            src : 'amd-ui-web/ui-tests/src/*.js',
             options : {
-                specs : 'amd-ui-web/tests/spec/player.spec.js',
+                specs : 'amd-ui-web/ui-tests/spec/*.js',
                 template: require('grunt-template-jasmine-requirejs'),
                 templateOptions: {
                     requireConfig: {
@@ -54,7 +54,6 @@ module.exports = function (grunt) {
     });
 
 
-
     grunt.loadNpmTasks('grunt-contrib-requirejs');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-watch');
@@ -62,7 +61,8 @@ module.exports = function (grunt) {
 
 
     //grunt.registerTask('default', ['requirejs', 'less', 'watch', 'jasmine']);
-
-    grunt.registerTask('default', ['requirejs', 'jasmine']);
+    grunt.registerTask('default', ['requirejs', 'less']);
+    grunt.registerTask('watch', ['watch']);
+    grunt.registerTask('test', ['jasmine']);
 
 }

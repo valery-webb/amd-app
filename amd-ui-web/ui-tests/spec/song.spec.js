@@ -1,4 +1,4 @@
-define(['src/song'], function(Song) {
+define(['amd-ui-web/ui-tests/src/song'], function(Song) {
     describe('Song', function() {
 
         it('can create a Song', function() {
