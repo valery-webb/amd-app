@@ -1,6 +1,11 @@
 {
     "name": "AMD-app",
     "version": "0.0.1",
+    "author": {
+        "name": "Valery Shvyndzikau",
+        "email": "valery_shvyndzikau@epam.com",
+        "url": "https://github.com/valery-webb"
+    },
     "devDependencies": {
         "grunt": "latest",
         "grunt-contrib-requirejs": "latest",
