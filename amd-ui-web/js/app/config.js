@@ -1,6 +1,6 @@
 requirejs.config({
 
-    /*baseUrl: '',*/
+    //baseUrl: '',
 
     deps: ['main'],
 
@@ -12,17 +12,23 @@ requirejs.config({
     },
 
     shim: {
-        'backbone': {
+
+        underscore: {
+            exports: '_'
+        },
+
+        backbone: {
             deps: ['jquery', 'underscore'],
             exports: 'Backbone'
         },
 
-        'bootstrap': {
+        bootstrap: {
             deps: ['jquery']
         }
     }
 });
 
+// bootstrap injection
 requirejs([
     'jquery', 
     'bootstrap'
